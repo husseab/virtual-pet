@@ -18,7 +18,14 @@ function Pet(name) {
     this.children.push(child)
         }
         
-
+  Pet.prototype.growUp = function() {
+    if (!this.isAlive) {
+      throw new Error('Your pet is no longer alive :(');
+    }
+    this.age += 1;
+    this.hunger +=5;
+    this.fitness -= 3;
+  }
 
   Pet.prototype.walk = function() {
     if (!this.isAlive) {
