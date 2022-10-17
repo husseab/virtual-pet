@@ -18,16 +18,18 @@ function Pet(name) {
     this.children.push(child)
         }
         
-  Pet.prototype.growUp = function() {
+
+
+  Pet.prototype.walk = function() {
     if (!this.isAlive) {
       throw new Error('Your pet is no longer alive :(');
     }
-    this.age += 1;
-    this.hunger +=5;
-    this.fitness -= 3;
+    if ((this.fitness + 4) <= MAXIMUM_FITNESS ) {
+      this.fitness += 4;
+    } else {
+      this.fitness = MAXIMUM_FITNESS;
+    }
   }
-
-
   Pet.prototype.feed = function() {
     if (!this.isAlive) {
       throw new Error('Your pet is no longer alive :(');
