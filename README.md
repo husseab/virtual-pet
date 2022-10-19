@@ -1,1 +1,1 @@
-This is a virtual pet program. test
+This is a virtual pet program.
