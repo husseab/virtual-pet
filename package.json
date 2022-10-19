@@ -13,5 +13,17 @@
   },
   "dependencies": {
     "npm": "^8.17.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husseab/virtual-pet.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/husseab/virtual-pet/issues"
+  },
+  "homepage": "https://github.com/husseab/virtual-pet#readme"
 }
